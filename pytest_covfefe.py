@@ -10,10 +10,10 @@ def pytest_report_teststatus(report):
     if report.when in ('setup', 'teardown'):
         return
 
-    hands = random.choice(["👋 ", "👐 ", "🙌 "])
-    earth = random.choice(["🌎 ", "🌍 ", "🌏 "])
-    climate = random.choice(["🌤 ", "🌧 ", "🌩 "])
-    poo = "💩 "
+    hands = random.choice(["👋", "👐", "🙌"])
+    earth = random.choice(["🌎", "🌍", "🌏"])
+    climate = random.choice(["🌤", "🌧", "🌩"])
+    poo = "💩"
 
     all_letters = string.ascii_uppercase
     vowels = ['A', 'E', 'I', 'O', 'U']
@@ -31,7 +31,7 @@ def pytest_report_teststatus(report):
 
     word = random.choice(['COVFEFE', ''.join(letters)])
 
-    verbose = f"{hands} {word} {poo} {earth} {climate}"
+    verbose = f"{hands}  {word} {poo} {earth} {climate}"
 
     return report.outcome, hands, verbose
 
