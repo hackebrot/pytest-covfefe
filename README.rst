@@ -50,6 +50,25 @@ This plugin also supports *verbose* mode::
 
     $ pytest -v
 
+
+Example
+-------
+
+.. code-block::
+
+    $ pytest -v
+    ============================== test session starts ==============================
+    plugins: covfefe-0.1.0
+    collected 5 items
+
+    foobar/test_foobar_02.py::test_sth 🙌  AKTBYLOMRQ 💩  🌎  🌤
+    foobar/test_foobar_03.py::test_sth 🙌  COVFEFE 💩  🌏  🌩
+    hello/world/test_world_01.py::test_sth 👋  COVFEFE 💩  🌍  🌩
+    hello/world/test_world_02.py::test_sth 👋  WIVLCKFNMQ 💩  🌍  🌤
+    hello/world/test_world_03.py::test_sth 👋  PGXPIUSJ 💩  🌍  🌤
+
+    =========================== 5 passed in 0.31 seconds ============================
+
 License
 -------
 
